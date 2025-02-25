@@ -1,69 +1,96 @@
-# Welcome to your Lovable project
 
-## Project info
+# Username Generator
 
-**URL**: https://lovable.dev/projects/f345219a-b323-4064-8c21-be96b4666836
+A sleek and modern web application that generates unique, memorable usernames for your online presence.
 
-## How can I edit this code?
+## Features
 
-There are several ways of editing your application.
+- **Random Username Generation**: Combines curated adjectives and nouns to create unique usernames
+- **Customization Options**: 
+  - Add random numbers (1-999)
+  - Include special characters (!, _, ., -)
+- **Clipboard Integration**: One-click copy functionality for generated usernames
+- **History**: Keeps track of your recently generated usernames
+- **Modern UI**: Clean, responsive design with smooth animations
+- **Real-time Preview**: See generated usernames instantly
 
-**Use Lovable**
+## Technologies Used
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/f345219a-b323-4064-8c21-be96b4666836) and start prompting.
+- **React**: Frontend library for building user interfaces
+- **TypeScript**: Type-safe JavaScript
+- **Tailwind CSS**: Utility-first CSS framework for styling
+- **Framer Motion**: Animation library for smooth transitions
+- **Shadcn/ui**: Modern UI component library
+- **Vite**: Next-generation frontend build tool
 
-Changes made via Lovable will be committed automatically to this repo.
+## Getting Started
 
-**Use your preferred IDE**
+### Prerequisites
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- Node.js (v14 or higher)
+- npm (comes with Node.js)
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Installation
 
-Follow these steps:
+1. Clone the repository:
+```bash
+git clone <your-repo-url>
+```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+2. Navigate to the project directory:
+```bash
+cd username-generator
+```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+3. Install dependencies:
+```bash
+npm install
+```
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+4. Start the development server:
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+5. Open your browser and visit `http://localhost:8080`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Project Structure
 
-**Use GitHub Codespaces**
+```
+src/
+├── components/
+│   ├── GeneratedUsername.tsx   # Username display component
+│   ├── UsernameGenerator.tsx   # Main generator component
+│   └── ui/                     # Reusable UI components
+├── utils/
+│   └── usernameGenerator.ts    # Username generation logic
+├── pages/
+│   └── Index.tsx              # Main page
+└── ...
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Usage
 
-## What technologies are used for this project?
+1. Visit the application in your browser
+2. Toggle options for including numbers or special characters
+3. Click "Generate Username" to create a new username
+4. Click the copy icon next to any username to copy it to your clipboard
+5. Generated usernames are displayed in a list with the most recent at the top
 
-This project is built with .
+## Contributing
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-## How can I deploy this project?
+## License
 
-Simply open [Lovable](https://lovable.dev/projects/f345219a-b323-4064-8c21-be96b4666836) and click on Share -> Publish.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-## I want to use a custom domain - is that possible?
+## Acknowledgments
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+- Built with [Lovable](https://lovable.dev)
+- UI components from [shadcn/ui](https://ui.shadcn.com/)
+- Icons from [Lucide](https://lucide.dev/)
